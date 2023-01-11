@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(222, 36%, 15%);
+}
+
+.calcBody {
+    width: 40%;
+    
+}
+
+.container-fluid {
+    padding: 0;
+    background-color: hsl(222, 26%, 31%);
+}
+
+.button {
+    /* background-color: rgb(175, 190, 185); */
+    /* margin: 1px; */
+}
+
+.btn-primary{
+    width: 100%;
+    background-color: hsl(225, 21%, 49%);
+}
+
+.row {
+    margin: 1.5vw;
+}
