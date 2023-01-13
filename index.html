@@ -28,30 +28,32 @@
      <div class="tog"></div>
     </div>
     <div class="screen">
-      <input type = "text" name="calc" readonly id = "screen">
+      <form name ="calc">
+        <input type = "text" name="text" readonly id = "screen">
+     </form>
+     </div>
+      <div class="cal-body">
+        <div class="btn">
+          <button class ="num" onclick="document.calc.text.value +='7'">7</button>
+          <button class ="num"onclick="document.calc.text.value+='8'">8</button>
+          <button class ="num" onclick="document.calc.text.value+='9'">9</button>
+          <button class = "del" >DEL</button>
+          <button class ="num" onclick="document.calc.text.value+='4'">4</button>
+          <button class ="num" onclick="document.calc.text.value+='5'">5</button>
+          <button class ="num" onclick="document.calc.text.value+='6'">6</button>
+          <button class = "num" onclick="document.calc.text.value+='+'">+</button>
+          <button class ="num" onclick="document.calc.text.value+='1'">1</button>
+          <button class ="num" onclick="document.calc.text.value+='2'">2</button>
+          <button class ="num" onclick="document.calc.text.value+='3'">3</button>
+          <button class = "num" onclick="document.calc.text.value+='-'">-</button>
+          <button>.</button>
+          <button class = "num" onclick="document.calc.text.value+='0'">0</button>
+          <button class = "num" onclick="document.calc.text.value+='/'">/</button>
+          <button class = "num" onclick="document.calc.text.value+='*'">x</button>
+          <button class = "reset"onclick="document.calc.text.value+=''">RESET</button>
+          <button class = "equal" onclick="document.calc.text.value=eval(calc.text.value)">=</button>
+        </div> 
+      </div>
     </div>
-    <div class="calc-body"></div>
-    <div class="btn">
-      <button class ="num">7</button>
-      <button class ="num">8</button>
-      <button class ="num">9</button>
-      <button class = "del">DEL</button>
-      <button class ="num">4</button>
-      <button class ="num">5</button>
-      <button class ="num">6</button>
-      <button class = "num">+</button>
-      <button class ="num">1</button>
-      <button class ="num">2</button>
-      <button class ="num">3</button>
-      <button class = "num">-</button>
-      <button>.</button>
-      <button class = "num">0</button>
-      <button class = "num">/</button>
-      <button class = "num">x</button>
-      <button class = "reset">RESET</button>
-      <button class = "equal">=</button>
-      
-    </div>
-  </div>
-</body>
+  </body>
 </html>
